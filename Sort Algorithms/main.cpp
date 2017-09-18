@@ -4,13 +4,14 @@
 #include <iostream>
 #include "BubbleSort.cpp"
 #include "InsertionSort.cpp"
+#include "SelectionSort.cpp"
 #define MAXN 10
 
 
 void stampa(int v[], int N)
 {
     for(int i = 0; i < N; i++)
-        printf("%d ", arr[i]);
+        printf("%d ", v[i]);
     printf("\n");
 }
 
@@ -23,6 +24,6 @@ int main()
         arr[i] = rand()%100;
 
     stampa(arr, MAXN);
-    BubbleSort(arr,MAXN);
+    SelectionSort(arr,MAXN);
     stampa(arr, MAXN);
 }
