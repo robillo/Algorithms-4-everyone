@@ -3,6 +3,7 @@
 #include <time.h>
 #include <iostream>
 #include "BubbleSort.cpp"
+#include "AdaptiveInsertionSort.cpp"
 #include "InsertionSort.cpp"
 #include "SelectionSort.cpp"
 #define MAXN 10
@@ -23,7 +24,29 @@ int main()
     for(int i = 0; i < MAXN; i++)
         arr[i] = rand()%100;
 
-    stampa(arr, MAXN);
+    //stampa(arr, MAXN);
     SelectionSort(arr,MAXN);
     stampa(arr, MAXN);
+
+    for(int i = 0; i < MAXN; i++)
+        arr[i] = rand()%100;
+
+    //stampa(arr, MAXN);
+    InsertionSort(arr,MAXN);
+    stampa(arr, MAXN);
+
+    for(int i = 0; i < MAXN; i++)
+        arr[i] = rand()%100;
+
+    //stampa(arr, MAXN);
+    AdaptiveInsertionSort(arr,MAXN);
+    stampa(arr, MAXN);
+
+    for(int i = 0; i < MAXN; i++)
+        arr[i] = rand()%100;
+
+    //stampa(arr, MAXN);
+    BubbleSort(arr,MAXN);
+    stampa(arr, MAXN);
+
 }
