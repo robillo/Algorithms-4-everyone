@@ -7,6 +7,7 @@
 #include "InsertionSort.cpp"
 #include "SelectionSort.cpp"
 #include "QuickSort.cpp"
+#include "RandomizedQuickSort.cpp"
 #define MAXN 10
 
 
@@ -27,7 +28,7 @@ int main()
         arr[i] = rand()%100;
 
     stampa(arr, MAXN);
-    QuickSort(arr,MAXN);
+    QuickSortR(arr,MAXN);
     stampa(arr, MAXN);
 
 }
