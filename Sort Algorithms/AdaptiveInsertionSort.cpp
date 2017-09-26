@@ -1,7 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "Define.cpp"
 
-using namespace std;
 
 void AdaptiveInsertionSort(int v[], int N)
 {

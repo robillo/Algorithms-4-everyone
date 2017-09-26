@@ -1,7 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "Define.cpp"
 
-using namespace std;
 
 int partition(int v[], int l, int r){
     int i = l-1, j = r;

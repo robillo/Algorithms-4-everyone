@@ -1,6 +1,5 @@
 #include "Define.cpp"
 
-using namespace std;
 
 int partitionS(char s[][MAXS+1], int indici[], int l, int r){
     int i = l-1, j = r;
@@ -24,11 +23,8 @@ void sortS(char s[][MAXS+1], int indici[], int l, int r){
     sortS(s, indici, mid + 1, r);
 }
 
-int indici[MAXN];
 
-void QuickSortS(char s[][MAXS+1], int N)
+void QuickSortS(char s[][MAXS+1], int indici[], int N)
 {
-    for(int i = 0; i < N; i++)
-        indici[i] = i;
     sortS(s, indici, 0, N-1);
 }
