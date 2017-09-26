@@ -8,27 +8,27 @@
 #include "SelectionSort.cpp"
 #include "QuickSort.cpp"
 #include "RandomizedQuickSort.cpp"
-#define MAXN 10
+#include "RandomizedQuickSort with strings.cpp"
 
-
-void stampa(int v[], int N)
-{
-    for(int i = 0; i < N; i++)
-        printf("%d ", v[i]);
-    printf("\n");
-}
+#include "Define.cpp"
 
 int arr[MAXN];
+char arrS[MAXN][MAXS+1];
 
 int main()
 {
+    int a;
     srand(time(NULL));
 
     for(int i = 0; i < MAXN; i++)
-        arr[i] = rand()%100;
+        for(int j = 0; j < MAXS; j++)
+            arrS[i][j] = rand()%(90 - 65+1) + 65;
 
-    stampa(arr, MAXN);
-    QuickSortR(arr,MAXN);
-    stampa(arr, MAXN);
+    for(int i = 0; i < MAXN; i++)
+        arrS[i][MAXS] = '\0';
 
+    stampaS(arrS, MAXN);
+    printf("\n");
+    QuickSortS(arrS, MAXN);
+    stampaSI(s, indici, N);
 }

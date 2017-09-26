@@ -1,11 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <random>
-
-using namespace std;
-
-random_device rd;
-mt19937 eng(rd());
+#include "Define.cpp"
 
 int partitionR(int v[], int l, int r){
     int i = l-1, j = r;
