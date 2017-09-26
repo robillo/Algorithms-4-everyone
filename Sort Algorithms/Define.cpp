@@ -26,13 +26,22 @@ void stampa(int v[], int N)
 void stampaS(char v[][MAXS+1], int N)
 {
     for(int i = 0; i < N; i++)
-            printf("%s\n", v[i]);
+        printf("%s\n", v[i]);
+    printf("\n");
 }
 
 void stampaSI(char v[][MAXS+1], int indici[], int N)
 {
     for(int i = 0; i < N; i++)
-            printf("%s\n", v[indici[i]]);
+        printf("%s\n", v[indici[i]]);
+    printf("\n");
+}
+
+void stampaP(char *v[], int N)
+{
+    for(int i = 0; i < N; i++)
+        printf("%s\n", v[i]);
+    printf("\n");
 }
 
 #endif //Define
