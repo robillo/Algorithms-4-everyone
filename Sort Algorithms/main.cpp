@@ -10,7 +10,6 @@
 #include "RandomizedQuickSort with strings and pointers.cpp"
 #include "Print.cpp"
 
-
 int arr[MAXN];
 char arrS[MAXN][MAXS+1];
 int indici[MAXN];
